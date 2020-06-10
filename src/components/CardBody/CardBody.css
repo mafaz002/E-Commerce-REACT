@@ -1,0 +1,40 @@
+.cardBodyContainer {
+    border-bottom: 1.5px solid darkgrey;
+    padding: 0.3em 0;
+    line-height: 1.5;
+}
+
+.bodyTitle{
+    font-size:12px;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+
+.customBodyFonts {
+    font-family: 'Lato', sans-serif;
+}
+
+.customBodyContent {
+    font-family: 'Roboto', sans-serif;
+    font-weight:Thin 100;
+    font-size:10px;
+}
+
+@media screen and (min-width:768px) and (max-width:1023px){
+    .bodyTitle {
+        font-size: 0.7em;
+    }
+    .customBodyContent {
+        font-size: 0.6em;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1500px) {
+    .bodyTitle {
+        font-size: 1.5em;
+    }
+
+    .customBodyContent {
+        font-size: 1.2em;
+    }
+}

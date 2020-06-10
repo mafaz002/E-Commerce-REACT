@@ -1,0 +1,31 @@
+.Cover {
+    width: 100%;
+    height: 30em;
+}
+
+.photoContainer{
+    position:relative;
+}
+
+.photoCaption{
+   font-size:5em;
+}
+
+.quotes {
+    display: inline;
+    position: absolute;
+    top: 17%;
+    left: 22%;
+    color: whitesmoke;
+    font-family: 'Dancing Script', cursive;
+}
+
+h1{
+    margin:0;
+}
+
+.author{
+    margin-top:0;
+    color:black;
+    margin-left:70% !important;
+}

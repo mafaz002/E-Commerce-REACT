@@ -1,0 +1,46 @@
+.customColorFont {
+    font-size:12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h3{
+    text-transform:uppercase;
+    height:0.05em;
+}
+
+.cardColorContainer {
+    border-bottom: 1.5px solid darkgrey;
+    padding: 0.3em 0;
+    line-height: 0.5;
+}
+
+@media screen and (max-width:767px){
+    .cardColorContainer {
+        width:9em;    
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px){
+    .customColorFont {
+        margin-top: 0.5em !important;
+        font-size: 0.8em;
+    }
+    .cardColorContainer {
+        line-height: 0.3;
+        padding-top: 0.3em;
+        padding-bottom: 0.5em;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1500px) {
+    .customColorFont {
+        margin-top:0.5em !important;
+        font-size: 1.7em;
+    }
+
+    .cardColorContainer {
+        line-height: 0.3;
+        padding-top:0.3em;
+        padding-bottom:1em;
+    }
+}

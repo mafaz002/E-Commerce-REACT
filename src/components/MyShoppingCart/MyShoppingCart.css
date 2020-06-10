@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+
+.noItem{
+   text-align:center;
+   margin-top:25%;
+   font-size:2em;
+}
+
+.cartContainer {
+    color: black;
+    margin: 2em 1em;
+}
+
+.cartTable {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:0.1em 0 0.1em 1em;
+    margin-top: 2em !important;
+}
+
+.darkGrey {
+    background-color: darkgrey;
+}
+
+.lightGrey {
+    background-color: lightgrey;
+}
+
+.grandTotal {
+    font-family: 'Montaga', serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight:bold;
+}
+
+.grandPrice {
+    font-family: 'Montaga', serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bolder;
+    color:red;
+}
+
+.updateWidth {
+    width: 20%;
+}

@@ -1,0 +1,37 @@
+*{
+    box-sizing:border-box;
+}
+
+.cartButton {
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    border-radius:2em;
+    padding: 0.6em;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: sans-serif;
+    align-self: start;
+}
+
+.cartButton:hover{
+    background-color:darkorange;
+}
+
+.footerContainer{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    padding-top:0.65em;
+}
+
+.custom {
+    margin-right: 0.3em;
+}
+
+.itemPrice {
+    display: inline-block;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    justify-self: end;
+    align-self:center;
+}
