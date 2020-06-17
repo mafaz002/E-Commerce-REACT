@@ -1,21 +1,21 @@
-export const fashionMetaData = [
+export const electronicsMetaData = [
     {
-      header: {
-        mainTitle: 'MENs T-Shirt',
-        subTitle: 'Cool T-Shirt for men'
+        header: {
+            mainTitle: 'Laptop',
+            subTitle: 'High-processing laptop for commercial use'
         },
         color: {
             colors: ["#1E90FF", "#FF0000", "#FFA500", "#008000"]
         },
         size: {
             show: true,
-            sizeValues: ['S','M','L']
+            sizeValues: ['S', 'M', 'L']
         }
     },
     {
         header: {
-            mainTitle: 'Nike Shoes',
-            subTitle: 'Running sneakers by nike'
+            mainTitle: 'IPhone',
+            subTitle: 'IPhone 9 by Apple'
         },
         color: {
             colors: ["#1E90FF", "#FF0000", "#FFA500", "#008000"]
@@ -27,28 +27,28 @@ export const fashionMetaData = [
     },
     {
         header: {
-            mainTitle: 'Women Sunglass',
-            subTitle: 'Avion sunglasses exclusively for women'
+            mainTitle: 'DSLR',
+            subTitle: 'High-quality DSLR by canon'
         },
         color: {
             colors: ["#1E90FF", "#FF0000", "#FFA500", "#008000"]
         },
         size: {
             show: true,
-            sizeValues: ['S', 'M', 'L']
+            sizeValues: [1, 2, 3, 4]
         }
     },
     {
         header: {
-            mainTitle: 'Men Sunglass',
-            subTitle: 'Vintage sunglass for men'
+            mainTitle: 'PlayStation-5',
+            subTitle: 'Sony\'s modern playstation'
         },
         color: {
             colors: ["#1E90FF", "#FF0000", "#FFA500", "#008000"]
         },
         size: {
             show: true,
-            sizeValues: ['S', 'M', 'L']
+            sizeValues: [1, 2, 3, 4]
         }
     }
 ]

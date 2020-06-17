@@ -1,9 +1,11 @@
 import React, {useContext} from 'react';
 import './CardColorPicker.css';
 import { CirclePicker } from 'react-color';
-import { RootContext } from '../../App';
+import { RootContext } from '../ItemType/ItemType';
 import { useDispatch } from 'react-redux';
 import { fashionColor } from '../../actions/fashionActions';
+import { electronicsColor } from '../../actions/electronicsActions';
+
 
 type Props = {
     title?: string
@@ -15,6 +17,7 @@ const defaultProps = {
 
 export const CardColorPicker: React.FunctionComponent<Props> = (props) => {
     let context = useContext(RootContext).item;
+    const category = useContext(RootContext).type;
     const theme = context.color;
     const metaData = context.metadata.color;
     const dispatch = useDispatch();
@@ -24,7 +27,7 @@ export const CardColorPicker: React.FunctionComponent<Props> = (props) => {
             index: context.itemIndex,
             value: color.hex
         };
-        dispatch(fashionColor(obj));
+        category === 'Fashion' ? dispatch(fashionColor(obj)) : dispatch(electronicsColor(obj));
     }
 
     return (

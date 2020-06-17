@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import './CardSizePicker.css';
-import { RootContext } from '../../App';
+import { RootContext } from '../ItemType/ItemType';
 
 type Props = {
     title?: string

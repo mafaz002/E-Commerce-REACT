@@ -36,11 +36,11 @@ export const ShoppingTable: React.FunctionComponent<Props> = (props) => {
                         <div key={value.itemIndex} className={'flexItem'}>
                             <div className={'setWidth'}><img src={require(`../../Photos/${value.photo}`)} className={'cartPhoto'} /></div>
                             <div className={'setWidth'}>{value.name}</div>
-                            <div className={'setWidth'}>{value.price}</div>
+                            <div className={'setWidth'}>${value.price}</div>
                             <div className={'setWidth'}>
                                 <input type="number" min={1} value={value.quantity} onChange={(event) => handleQuantityChange(event, value.itemIndex)} className={'quantityPicker'} />
                             </div>
-                            <div className={'setWidth'}>{value.price * value.quantity}</div>
+                            <div className={'setWidth'}>${value.price * value.quantity}</div>
                             <div className={'setWidth'}><GrFormClose className={'removeItem'} onClick={() =>
                                 //@ts-ignore
                                 props.removeItem(value.itemIndex, index, props.category)} /></div>

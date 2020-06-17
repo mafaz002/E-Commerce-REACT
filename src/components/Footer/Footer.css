@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+
+.Footer{
+    height:10em;
+    background-color:seagreen;
+    color:black;
+    padding-top:2.5em;
+}
+
+.footItem{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.copy{
+    font-weight:normal;
+    color:white;
+    font-size:0.8em;
+}

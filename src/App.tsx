@@ -1,33 +1,18 @@
 import React from 'react';
-import { ShoppingCard } from './components/ShoppingCard/ShoppingCard';
-import { NavBar } from './components/NavBar/NavBar';
-import { CoverPhoto } from './components/CoverPhoto/CoverPhoto';
 import './App.css';
-import { useSelector } from 'react-redux';
-import { PRODUCT } from './types/fashionTypes';
-
-export const RootContext: React.Context<any> = React.createContext(0); 
+import { ItemType } from './components/ItemType/ItemType';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { DetailsForm } from './components/DetailsForm/DetailsForm';
 
 function App() {
-    //@ts-ignore
-    let fashionState = useSelector(state => state.Fashion);
-
-  return (
-      <div>
-          <NavBar />
-          <CoverPhoto />
-
-          <div className={'shoppingItems'}>
-          {
-                  fashionState.items.map((value: PRODUCT, index: number) =>
-                      //@ts-ignore
-                      <RootContext.Provider value={{ item: value }} key={index}>
-                      <ShoppingCard />
-                      </RootContext.Provider>)
-          }
-          </div>
-
-    </div>
+    return (
+        <Router>
+            <Switch>
+                <Route exact path={'/'}><ItemType type={'Fashion'} name={'Fashion'} quotes={true} /></Route>
+                <Route exact path={'/Electronics'}><ItemType type={'Electronics'} name={'Electronics'} /></Route>
+                <Route exact path={'/Checkout'} component={DetailsForm} />
+            </Switch>
+        </Router>
   );
 }
 

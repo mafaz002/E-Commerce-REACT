@@ -6,4 +6,4 @@ export default {
     title: 'CoverPhoto'
 }
 
-export const MainCoverPhoto = () => <CoverPhoto/>
+export const MainCoverPhoto = () => <CoverPhoto type={'Fashion'} name={'Fashion'} quotes={true}/>

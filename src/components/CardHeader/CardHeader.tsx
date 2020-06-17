@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import './CardHeader.css';
-import {RootContext} from '../../App';
+import { RootContext } from '../ItemType/ItemType';
 
 export const CardHeader: React.FunctionComponent = () => {
     let context = useContext(RootContext).item;
